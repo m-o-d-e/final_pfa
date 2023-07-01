@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
+import '../../screens/addCrop/addCrop_widget.dart';
+import '../../screens/addParcel/AddParcel.dart';
 import '../../screens/addSoil/addsoil_widget.dart';
 import '../../screens/home_page.dart';
 import 'serialization_util.dart';
@@ -40,6 +42,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'soil',
           path: '/soil',
           builder: (context, params) => const AddsoilWidget(),
+        ),
+        FFRoute(
+          name: 'parcel',
+          path: '/parcel',
+          builder: (context, params) => const AddParcel(),
+        ),
+        FFRoute(
+          name: 'crop',
+          path: '/crop',
+          builder: (context, params) => const AddcropWidget(),
         ),
         FFRoute(
           name: 'HomePage',

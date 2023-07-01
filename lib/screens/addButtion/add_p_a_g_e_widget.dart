@@ -80,7 +80,7 @@ class _AddPAGEWidgetState extends State<AddPAGEWidget> {
               ),
               FFButtonWidget(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/soil');
+                  Navigator.pushNamed(context, '/parcel');
                 },
                 text: '',
                 icon: Icon(
